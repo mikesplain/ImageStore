@@ -26,6 +26,9 @@ gem 'therubyracer'
 gem 'less-rails' 
 gem 'twitter-bootstrap-rails'
 gem 'slim-rails'
+gem 'carrierwave'
+gem 'rmagick'
+
 # gem 'turbolinks' # Turned off for now until app is created
 
 # Gems used only for assets and not required
