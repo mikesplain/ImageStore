@@ -19,9 +19,13 @@ group :development do
   # For livereload to function
   gem 'rack-livereload'
   gem 'rb-fsevent'
-  gem 'localtunnel', :git => "git://github.com/mikesplain/localtunnel.git", :ref => "57992651beb", :branch => 'v1'
+  gem 'localtunnel', :git => 'git://github.com/mikesplain/localtunnel.git', :ref => '57992651beb', :branch => 'v1'
 end
 
+gem 'therubyracer'
+gem 'less-rails' 
+gem 'twitter-bootstrap-rails'
+gem 'slim-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
