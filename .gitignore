@@ -14,3 +14,5 @@
 /log/*.log
 /tmp
 .rbenv*
+/public/upload*
+/public/system
