@@ -28,8 +28,8 @@ html lang="en"
           a.brand href="/" Imagestore
           .container-fluid.nav-collapse
             ul.nav
+              li= link_to "Images", "/images"
               li= link_to "Folders", "/folders"
-              li= link_to "Link 2", "/path2"
               li= link_to "Link 3", "/path3"
 
     .container-fluid
@@ -46,7 +46,7 @@ html lang="en"
           = yield
     
       footer
-        p &copy; Company 2012
+        / p &copy; Company 2012
     /!
       Javascripts
       \==================================================
