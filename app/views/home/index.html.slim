@@ -1,6 +1,31 @@
 div.hero-unit
   h1 ImageStore
   p Upload your image now. Click below or just drag it into your browser. Simple.
-  = render :template => 'uploads/index'
 
-div.list
+div.upload
+  = render :template => 'uploads/index'
+  
+
+
+  .row-fluid
+    ul.thumbnails
+      li.span3
+        .thumbnail
+          .caption
+            h3 Image 1
+            p Test button
+      li.span3
+        .thumbnail
+          .caption
+            h3 Image 2
+            p Test button
+      li.span3
+        .thumbnail
+          .caption
+            h3 Image 3
+            p Test button
+      li.span3
+        .thumbnail
+          .caption
+            h3 Image 4
+            p Test button
