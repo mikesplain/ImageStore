@@ -1,12 +1,6 @@
 div.hero-unit
-  h1 Imagestore
+  h1 ImageStore
   p Upload your image now. Click below or just drag it into your browser. Simple.
-  p
-    span.btn.btn-primary.btn-large Upload
-    = form_for @image, :html => {:multipart => true, :id => 'new_image'} do |f|
-      .field
-        = f.file_field :image, multiple: true, name: "image[image]"
-      .actions = f.submit 'Save'
+  = render :template => 'uploads/index'
 
-
-
+div.list
