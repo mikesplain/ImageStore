@@ -42,8 +42,10 @@ class ImagesController < ApplicationController
   def create
     @image = Image.new(params[:image])
 
+    logger.info "@image: #{@image.inspect}"
+
     respond_to do |format|
-      if @image.save
+      if @image.save || @image.id.nil? # for some reason it keeps submitting an extra blank image on upload...
         format.html { redirect_to @image, notice: 'Image was successfully created.' }
         format.json { render json: @image, status: :created, location: @image }
       else
