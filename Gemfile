@@ -5,7 +5,6 @@ gem 'rails', '3.2.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 
 
 group :development do
@@ -21,6 +20,7 @@ group :development do
   gem 'rb-fsevent'
   gem 'localtunnel', :git => 'git://github.com/mikesplain/localtunnel.git', :ref => '57992651beb', :branch => 'v1'
   # gem 'debugger'
+  gem 'sqlite3'
 end
 
 gem 'therubyracer'
@@ -30,6 +30,10 @@ gem 'slim-rails'
 gem 'carrierwave'
 gem 'rmagick'
 
+group :production do
+  gem 'pg'
+  gem 'thin'
+end
 
 
 # gem 'turbolinks' # Turned off for now until app is created
