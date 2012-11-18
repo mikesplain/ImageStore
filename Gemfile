@@ -29,6 +29,7 @@ gem 'twitter-bootstrap-rails'
 gem 'slim-rails'
 gem 'carrierwave'
 gem 'rmagick'
+gem 'github-fork-ribbon'
 
 group :production do
   gem 'pg'

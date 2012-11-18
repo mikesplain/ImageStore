@@ -63,6 +63,7 @@ GEM
     eventmachine (1.0.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    github-fork-ribbon (0.0.1)
     guard (1.5.3)
       listen (>= 0.4.2)
       lumberjack (>= 1.0.2)
@@ -195,6 +196,7 @@ PLATFORMS
 DEPENDENCIES
   carrierwave
   coffee-rails (~> 3.2.1)
+  github-fork-ribbon
   guard
   guard-bundler
   guard-livereload
